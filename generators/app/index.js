@@ -36,6 +36,9 @@ module.exports = generator.Base.extend({
 
       // Install redux and react bindings as requirement
       this.npmInstall(['redux', 'react-redux'], { save: true });
+
+      //-- TODO: add support for non-chrome-extension usage (manual integration)
+      // this.npmInstall(['redux-devtools', 'redux-devtools-log-monitor', 'redux-devtools-dock-monitor'], { saveDev: true });
     });
   }
 });
